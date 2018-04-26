@@ -1,4 +1,112 @@
-[
+[	{
+		"castingTime": "action",
+		"description": "You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks.",
+		"duration": "1 round",
+		"level": 0,
+		"range": "self",
+		"school": "Abjuration",
+		"ritual": false,
+		"name": "Blade Ward",
+		"components": {
+			"verbal": true,
+			"somatic": true,
+			"concentration": false,
+		}
+	},
+	{
+		"castingTime": "action",
+		"description": "As part of the action used to cast this spell, you must make a successful melee attack with a weapon against one creature, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and it becomes sheathed in booming energy until the start of your next turn. If the target willingly moves before then, it immediately takes 1d8 thunder damage, and the spell ends.\n\n***At Higher Levels.*** This spell's damage increases when you reach higher levels. At 5th level, the melee attack deals an extra 1d8 thunder damage to the target, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level and 17th level. ",
+		"duration": "1 round",
+		"level": 0,
+		"range": "5 feet",
+		"school": "Evocation",
+		"ritual": false,
+		"name": "Blooming Blade",
+		"components": {
+			"verbal": true,
+			"somatic": false,
+			"concentration": false,
+			"material": "a weapon"
+		}
+	},
+		{
+		"castingTime": "action",
+		"description": "You choose nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:\n\nYou instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.\nYou instantaneously extinguish the flames within the cube.\nYou double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.\nYou cause simple shapes—such as the vague form of a creature, an inanimate object, or a location—to appear within the flames and animate as you like. The shapes last for 1 hour.\nIf you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
+		"duration": "Instantaneous or 1 hour",
+		"level": 0,
+		"range": "60 feet",
+		"school": "Transmutation",
+		"ritual": false,
+		"name": "Control Flames",
+		"components": {
+			"verbal": false,
+			"somatic": true,
+			"concentration": false,
+		}
+		},
+	{
+		"castingTime": "action",
+		"description": "You create a bonfire on ground that you can see within range. Until the spells ends, the magic bonfire fills a 5-foot cube. Any creature in the bonfire’s space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it moves into the bonfire’s space for the first time on a turn or ends its turn there.\n\nThe bonfire ignites flammable objects in its area that aren't being worn or carried. \n\n***At Higher Levels.*** The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+		"duration": "Up to 1 minute",
+		"level": 0,
+		"range": "60 feet",
+		"school": "Conjuration",
+		"ritual": false,
+		"name": "Create Bonfire",
+		"components": {
+			"verbal": true,
+			"somatic": true,
+			"concentration": true,
+		},
+	"attacks": [
+			{
+				"attackBonus": "DC Dex save",
+				"details": "range 60 feet, any target in the 5-feet cube the bonfire creates",
+				"damage": "{floor((Level+1)/6)+1}d8",
+				"damageType": "fire"
+			}
+		]
+	},
+	{
+		"castingTime": "action",
+		"description": "Whispering to the spirits of nature, you create one of the following effects within range:\n\nYou create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.\nYou instantly make a flower blossom, a seed pod open, or a leaf bud bloom.\nYou create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.\nYou instantly light or snuff out a candle, torch, or a small campfire.",
+		"duration": "Instantaneous",
+		"level": 0,
+		"range": "30 feet",
+		"school": "Transmutation",
+		"ritual": false,
+		"name": "Druidcraft",
+		"components": {
+			"verbal": true,
+			"somatic": true,
+			"concentration": false,
+		}
+		},
+		
+	{
+		"castingTime": "action",
+		"description": "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.\n\n***At Higher Levels.*** The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
+		"duration": "Instantaneous",
+		"level": 0,
+		"range": "120 feet",
+		"school": "Evocation",
+		"ritual": false,
+		"name": "Eldritch Blast",
+		"components": {
+			"verbal": true,
+			"somatic": true,
+			"concentration": false,
+		},
+	"attacks": [
+			{
+				"attackBonus": "attackBonus",
+				"details": "range 120 feet",
+				"damage": "1d10",
+				"damageType": "force"
+			}
+		]
+	}, 
+
 
 	{
 		"castingTime": "action",
